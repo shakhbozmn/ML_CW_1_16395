@@ -1,0 +1,25 @@
+{
+  "export_timestamp": 1764772766.203593,
+  "files_created": [
+    "model_results.json - Model performance metrics",
+    "dataset_stats.json - Dataset statistics",
+    "preprocessing_info.json - Preprocessing details",
+    "model_analysis.json - Feature importance and analysis",
+    "business_insights.json - Key findings and recommendations",
+    "best_model.pkl - Trained best model",
+    "confusion_matrix.png - Confusion matrix visualization",
+    "delay_distribution.png - EDA visualization",
+    "top_carriers.png - EDA visualization",
+    "carrier_delays.png - EDA visualization",
+    "feature_importance_rf.png - Random Forest feature importance",
+    "feature_importance_xgb.png - XGBoost feature importance",
+    "model_comparison.png - Model performance comparison",
+    "average_delay_by_month.png - Monthly delay patterns"
+  ],
+  "streamlit_requirements": [
+    "All data needed for complete Streamlit app",
+    "Pre-computed visualizations for fast loading",
+    "Model artifacts for inference",
+    "Business insights for presentation"
+  ]
+}

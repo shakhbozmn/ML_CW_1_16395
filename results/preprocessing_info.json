@@ -1,0 +1,66 @@
+{
+  "missing_value_strategy": {
+    "delay_columns": "Fill with 0 (no delay)",
+    "count_columns": "Fill with 0 (no occurrences)",
+    "categorical_columns": "Fill with 'Unknown'"
+  },
+  "outlier_treatment": {
+    "method": "IQR capping (1.5 * IQR)",
+    "columns_treated": [
+      "arr_delay",
+      "carrier_delay",
+      "weather_delay",
+      "nas_delay",
+      "late_aircraft_delay"
+    ],
+    "outliers_capped": {
+      "arr_delay": 46990,
+      "carrier_delay": 43030,
+      "weather_delay": 51053,
+      "nas_delay": 50811,
+      "late_aircraft_delay": 48270
+    }
+  },
+  "feature_engineering": {
+    "target_variable": {
+      "name": "high_delay_month",
+      "definition": "delay_rate > 0.25",
+      "threshold_rationale": "25% delay rate separates normal vs high-delay periods"
+    },
+    "temporal_features": [
+      "quarter",
+      "is_winter",
+      "is_summer",
+      "is_peak_travel"
+    ],
+    "operational_features": [
+      "flights_per_day",
+      "cancellation_rate",
+      "total_disruptions"
+    ],
+    "aggregated_features": [
+      "airport_stats",
+      "carrier_stats"
+    ]
+  },
+  "encoding_scaling": {
+    "categorical_encoding": "LabelEncoder for carrier and airport",
+    "numerical_scaling": "StandardScaler for all numerical features",
+    "rationale": "Tree-based models handle label encoding well, scaling helps other algorithms"
+  },
+  "data_leakage_prevention": {
+    "removed_features": [
+      "arr_del15",
+      "arr_delay",
+      "carrier_delay",
+      "weather_delay",
+      "nas_delay",
+      "security_delay",
+      "late_aircraft_delay",
+      "delay_rate",
+      "carrier_percentage",
+      "weather_percentage"
+    ],
+    "final_feature_count": 22
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "total_records": 409612,
+  "features": 21,
+  "missing_values_before": {
+    "year": 0,
+    "month": 0,
+    "carrier": 0,
+    "carrier_name": 0,
+    "airport": 0,
+    "airport_name": 0,
+    "arr_flights": 660,
+    "arr_del15": 956,
+    "carrier_ct": 660,
+    "weather_ct": 660,
+    "nas_ct": 660,
+    "security_ct": 660,
+    "late_aircraft_ct": 660,
+    "arr_cancelled": 660,
+    "arr_diverted": 660,
+    "arr_delay": 660,
+    "carrier_delay": 660,
+    "weather_delay": 660,
+    "nas_delay": 660,
+    "security_delay": 660,
+    "late_aircraft_delay": 660
+  },
+  "missing_values_after": 0,
+  "airlines": 38,
+  "airports": 426,
+  "years": "2003-2025",
+  "class_distribution": {
+    "0": 0.7292877161801901,
+    "1": 0.27071228381980994
+  }
+}

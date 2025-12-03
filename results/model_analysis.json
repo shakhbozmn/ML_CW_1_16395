@@ -1,0 +1,74 @@
+{
+  "random_forest_feature_importance": {
+    "features": [
+      "year",
+      "cancellation_rate",
+      "arr_flights",
+      "flights_per_day",
+      "airport_total_cancelled",
+      "airport_total_flights",
+      "airport_avg_flights",
+      "airport_total_diverted",
+      "month",
+      "airport",
+      "carrier",
+      "carrier_avg_flights",
+      "carrier_total_cancelled",
+      "carrier_total_diverted",
+      "carrier_total_flights"
+    ],
+    "importances": [
+      0.1381464274350118,
+      0.08454061210337055,
+      0.07300819118613683,
+      0.07297228496519947,
+      0.05808429716430637,
+      0.05416612743200459,
+      0.054140734967681965,
+      0.05357016510283882,
+      0.05216844187659411,
+      0.05030027130193315,
+      0.03619668313583171,
+      0.0316448981712013,
+      0.030182663915897367,
+      0.030142551576727593,
+      0.03008279697209003
+    ]
+  },
+  "xgboost_feature_importance": {
+    "features": [
+      "is_peak_travel",
+      "is_summer",
+      "is_winter",
+      "carrier_avg_flights",
+      "year",
+      "cancellation_rate",
+      "carrier_total_flights",
+      "carrier",
+      "carrier_total_cancelled",
+      "month",
+      "carrier_total_diverted",
+      "airport_total_cancelled",
+      "arr_flights",
+      "airport_avg_flights",
+      "airport_total_flights"
+    ],
+    "importances": [
+      0.16402362287044525,
+      0.13849766552448273,
+      0.09880734980106354,
+      0.0627424344420433,
+      0.059359289705753326,
+      0.04924721643328667,
+      0.04869325831532478,
+      0.04723391309380531,
+      0.04708842188119888,
+      0.04164230078458786,
+      0.03940228745341301,
+      0.03361862152814865,
+      0.02954656444489956,
+      0.026419488713145256,
+      0.02563650533556938
+    ]
+  }
+}

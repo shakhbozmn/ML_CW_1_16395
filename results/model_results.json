@@ -1,0 +1,65 @@
+{
+  "baseline_scores": {
+    "XGBoost": 0.6323256781924738,
+    "Random Forest": 0.536291466956001,
+    "Decision Tree": 0.5211700657636942,
+    "K-Nearest Neighbors": 0.49418327402428897,
+    "Logistic Regression": 0.48144467744787334
+  },
+  "optimized_scores": {
+    "Random Forest": 0.6174398076608993,
+    "XGBoost": 0.662005323149203,
+    "Decision Tree": 0.5211700657636942,
+    "Logistic Regression": 0.48144467744787334,
+    "K-Nearest Neighbors": 0.49418327402428897
+  },
+  "best_params": {
+    "Random Forest": {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "min_samples_split": 5,
+      "n_estimators": 200
+    },
+    "XGBoost": {
+      "colsample_bytree": 1.0,
+      "learning_rate": 0.2,
+      "max_depth": 9,
+      "n_estimators": 200,
+      "subsample": 1.0
+    }
+  },
+  "training_times": {
+    "Logistic Regression": 0.5859508514404297,
+    "Random Forest": 6.675947666168213,
+    "K-Nearest Neighbors": 0.046769142150878906,
+    "XGBoost": 0.5648901462554932,
+    "Decision Tree": 3.0632431507110596
+  },
+  "test_results": {
+    "Random Forest": {
+      "accuracy": 0.7897415866118184,
+      "f1_score": 0.62409706915741,
+      "roc_auc": 0.8422533850144867
+    },
+    "XGBoost": {
+      "accuracy": 0.7933425289601211,
+      "f1_score": 0.6670337883019313,
+      "roc_auc": 0.8728980113056165
+    },
+    "Decision Tree": {
+      "accuracy": 0.7466767574429647,
+      "f1_score": 0.5281156915800723,
+      "roc_auc": 0.6765511438312078
+    },
+    "Logistic Regression": {
+      "accuracy": 0.6276503546012719,
+      "f1_score": 0.4834733134651856,
+      "roc_auc": 0.6788233269116413
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.7586025902371739,
+      "f1_score": 0.5007321383489018,
+      "roc_auc": 0.7551227920211988
+    }
+  }
+}
